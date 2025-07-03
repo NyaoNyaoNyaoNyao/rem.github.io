@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
     <title>Nyao&#x27;s Blog</title>
-    <link href="https://NyaoNyaoNyaoNyao/rem.github.io/feed.xml" rel="self" />
-    <link href="https://NyaoNyaoNyaoNyao/rem.github.io" />
+    <link href="https://blog.atom.ip-ddns.com/feed.xml" rel="self" />
+    <link href="https://blog.atom.ip-ddns.com" />
     <updated>2025-07-03T22:16:03+08:00</updated>
     <author>
         <name>Rhambernia</name>
     </author>
-    <id>https://NyaoNyaoNyaoNyao/rem.github.io</id>
+    <id>https://blog.atom.ip-ddns.com</id>
 
     <entry>
         <title>（最新）如何在Wordpress中使用redis?</title>
         <author>
             <name>Rhambernia</name>
         </author>
-        <link href="https://NyaoNyaoNyaoNyao/rem.github.io/ru-he-zai-wordpresszhong-shi-yong-redis/"/>
-        <id>https://NyaoNyaoNyaoNyao/rem.github.io/ru-he-zai-wordpresszhong-shi-yong-redis/</id>
+        <link href="https://blog.atom.ip-ddns.com/ru-he-zai-wordpresszhong-shi-yong-redis/"/>
+        <id>https://blog.atom.ip-ddns.com/ru-he-zai-wordpresszhong-shi-yong-redis/</id>
             <category term="Tech"/>
 
         <updated>2025-07-03T20:56:56+08:00</updated>
