@@ -3,19 +3,76 @@
     <title>Nyao&#x27;s Blog</title>
     <link href="https://blog.atom.ip-ddns.com/feed.xml" rel="self" />
     <link href="https://blog.atom.ip-ddns.com" />
-    <updated>2025-07-03T22:16:03+08:00</updated>
+    <updated>2025-07-04T14:08:57+08:00</updated>
     <author>
         <name>Ramburnia</name>
     </author>
     <id>https://blog.atom.ip-ddns.com</id>
 
     <entry>
-        <title>（最新）如何在Wordpress中使用redis?</title>
+        <title>虚拟号码提供商接收（发送）短信（Twilio 及其替代品）</title>
         <author>
             <name>Ramburnia</name>
         </author>
-        <link href="https://blog.atom.ip-ddns.com/ru-he-zai-wordpresszhong-shi-yong-redis/"/>
-        <id>https://blog.atom.ip-ddns.com/ru-he-zai-wordpresszhong-shi-yong-redis/</id>
+        <link href="https://blog.atom.ip-ddns.com/how-to-find-mvno-to-use-sms/"/>
+        <id>https://blog.atom.ip-ddns.com/how-to-find-mvno-to-use-sms/</id>
+            <category term="Tech"/>
+
+        <updated>2025-07-04T14:06:57+08:00</updated>
+            <summary>
+                <![CDATA[
+                    <p class="entry-title full-title" data-immersive-translate-walked="019c3860-a5a2-4c9a-97fa-92fbbecd68cf"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">网络已经成为隐私的噩梦，其原因之一就是太多网站乐于要求用户提供电话号码。所以，我自然而然地开始寻找获取其他号码的方法。</span></p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p class="entry-title full-title" data-immersive-translate-walked="019c3860-a5a2-4c9a-97fa-92fbbecd68cf"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">网络已经成为隐私的噩梦，其原因之一就是太多网站乐于要求用户提供电话号码。所以，我自然而然地开始寻找获取其他号码的方法。</span></p>
+
+<div class="entry-content full-content" data-immersive-translate-walked="019c3860-a5a2-4c9a-97fa-92fbbecd68cf">
+<p data-immersive-translate-walked="019c3860-a5a2-4c9a-97fa-92fbbecd68cf" data-immersive-translate-paragraph="1"><span style="color: #e03e2d;">声明</span>，几乎所有的MVNO运营商（如Twilio）都对接受入站OTP（即短信验证码）有严格的风控，通常是全部拦截并提示滥用风险（试多了会封号）。而出站短信的部分也是严格风控（群发/bulk SMS），且通常只允许作为通知类短信/广告/物流推送等合理合规用途。</p>
+<h2 data-immersive-translate-walked="019c3860-a5a2-4c9a-97fa-92fbbecd68cf" data-immersive-translate-paragraph="1">Twilio</h2>
+<ul data-immersive-translate-walked="019c3860-a5a2-4c9a-97fa-92fbbecd68cf">
+<li data-immersive-translate-walked="019c3860-a5a2-4c9a-97fa-92fbbecd68cf" data-immersive-translate-paragraph="1"><span class="notranslate immersive-translate-target-wrapper" lang="zh-CN" data-immersive-translate-translation-element-mark="1"><span class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper" data-immersive-translate-translation-element-mark="1"><span class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner" data-immersive-translate-translation-element-mark="1">号码月费：1美元/月</span></span></span></li>
+<li data-immersive-translate-walked="019c3860-a5a2-4c9a-97fa-92fbbecd68cf" data-immersive-translate-paragraph="1"><span class="notranslate immersive-translate-target-wrapper" lang="zh-CN" data-immersive-translate-translation-element-mark="1"><span class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper" data-immersive-translate-translation-element-mark="1"><span class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner" data-immersive-translate-translation-element-mark="1">发送短信：0.0075 美元 + 运营商费用（0.002 美元至 0.005 美元）</span></span></span></li>
+<li data-immersive-translate-walked="019c3860-a5a2-4c9a-97fa-92fbbecd68cf" data-immersive-translate-paragraph="1"><span class="notranslate immersive-translate-target-wrapper" lang="zh-CN" data-immersive-translate-translation-element-mark="1"><span class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper" data-immersive-translate-translation-element-mark="1"><span class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner" data-immersive-translate-translation-element-mark="1">接收短信：$0.0075</span></span></span></li>
+</ul>
+<h2 data-immersive-translate-walked="019c3860-a5a2-4c9a-97fa-92fbbecd68cf" data-immersive-translate-paragraph="1"><span class="notranslate immersive-translate-target-wrapper" lang="zh-CN" data-immersive-translate-translation-element-mark="1"><span class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-inline-wrapper-theme-none immersive-translate-target-translation-inline-wrapper" data-immersive-translate-translation-element-mark="1"><span class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner" data-immersive-translate-translation-element-mark="1">Vonage</span></span></span></h2>
+<ul data-immersive-translate-walked="019c3860-a5a2-4c9a-97fa-92fbbecd68cf">
+<li data-immersive-translate-walked="019c3860-a5a2-4c9a-97fa-92fbbecd68cf" data-immersive-translate-paragraph="1"><span class="notranslate immersive-translate-target-wrapper" lang="zh-CN" data-immersive-translate-translation-element-mark="1"><span class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper" data-immersive-translate-translation-element-mark="1"><span class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner" data-immersive-translate-translation-element-mark="1">号码月费：1.06 美元/月（原价 0.98 美元）</span></span></span></li>
+<li data-immersive-translate-walked="019c3860-a5a2-4c9a-97fa-92fbbecd68cf" data-immersive-translate-paragraph="1"><span class="notranslate immersive-translate-target-wrapper" lang="zh-CN" data-immersive-translate-translation-element-mark="1"><span class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper" data-immersive-translate-translation-element-mark="1"><span class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner" data-immersive-translate-translation-element-mark="1">发送短信：0.0073 美元 + 运营商费用（0.0020 美元至 0.0050 美元）</span></span></span></li>
+<li data-immersive-translate-walked="019c3860-a5a2-4c9a-97fa-92fbbecd68cf" data-immersive-translate-paragraph="1"><span class="notranslate immersive-translate-target-wrapper" lang="zh-CN" data-immersive-translate-translation-element-mark="1"><span class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper" data-immersive-translate-translation-element-mark="1"><span class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner" data-immersive-translate-translation-element-mark="1">接收短信：$0.0067</span></span></span></li>
+</ul>
+<h2 data-immersive-translate-walked="019c3860-a5a2-4c9a-97fa-92fbbecd68cf" data-immersive-translate-paragraph="1">Plivo</h2>
+<ul data-immersive-translate-walked="019c3860-a5a2-4c9a-97fa-92fbbecd68cf">
+<li data-immersive-translate-walked="019c3860-a5a2-4c9a-97fa-92fbbecd68cf" data-immersive-translate-paragraph="1"><span class="notranslate immersive-translate-target-wrapper" lang="zh-CN" data-immersive-translate-translation-element-mark="1"><span class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper" data-immersive-translate-translation-element-mark="1"><span class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner" data-immersive-translate-translation-element-mark="1">号码月费：0.50 美元/月（原价 0.80 美元）</span></span></span></li>
+<li data-immersive-translate-walked="019c3860-a5a2-4c9a-97fa-92fbbecd68cf" data-immersive-translate-paragraph="1"><span class="notranslate immersive-translate-target-wrapper" lang="zh-CN" data-immersive-translate-translation-element-mark="1"><span class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper" data-immersive-translate-translation-element-mark="1"><span class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner" data-immersive-translate-translation-element-mark="1">发送短信：0.0050 美元 + 运营商费用（0.0025 美元至 0.0050 美元）</span></span></span></li>
+<li data-immersive-translate-walked="019c3860-a5a2-4c9a-97fa-92fbbecd68cf" data-immersive-translate-paragraph="1"><span class="notranslate immersive-translate-target-wrapper" lang="zh-CN" data-immersive-translate-translation-element-mark="1"><span class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper" data-immersive-translate-translation-element-mark="1"><span class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner" data-immersive-translate-translation-element-mark="1">接收短信：$0 + 运营商费用（$0 至 $0.005）</span></span></span></li>
+</ul>
+<h2 data-immersive-translate-walked="019c3860-a5a2-4c9a-97fa-92fbbecd68cf" data-immersive-translate-paragraph="1"><span class="notranslate immersive-translate-target-wrapper" lang="zh-CN" data-immersive-translate-translation-element-mark="1"><span class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-inline-wrapper-theme-none immersive-translate-target-translation-inline-wrapper" data-immersive-translate-translation-element-mark="1"><span class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner" data-immersive-translate-translation-element-mark="1">Bandwitch</span></span></span></h2>
+<ul data-immersive-translate-walked="019c3860-a5a2-4c9a-97fa-92fbbecd68cf">
+<li data-immersive-translate-walked="019c3860-a5a2-4c9a-97fa-92fbbecd68cf" data-immersive-translate-paragraph="1"><span class="notranslate immersive-translate-target-wrapper" lang="zh-CN" data-immersive-translate-translation-element-mark="1"><span class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper" data-immersive-translate-translation-element-mark="1"><span class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner" data-immersive-translate-translation-element-mark="1">号码月费：0.35美元/月</span></span></span></li>
+<li data-immersive-translate-walked="019c3860-a5a2-4c9a-97fa-92fbbecd68cf" data-immersive-translate-paragraph="1"><span class="notranslate immersive-translate-target-wrapper" lang="zh-CN" data-immersive-translate-translation-element-mark="1"><span class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper" data-immersive-translate-translation-element-mark="1"><span class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner" data-immersive-translate-translation-element-mark="1">发送短信：0.0040 美元 + 运营商费用 （0.0020 美元至 0.0050 美元）</span></span></span></li>
+<li data-immersive-translate-walked="019c3860-a5a2-4c9a-97fa-92fbbecd68cf" data-immersive-translate-paragraph="1"><span class="notranslate immersive-translate-target-wrapper" lang="zh-CN" data-immersive-translate-translation-element-mark="1"><span class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper" data-immersive-translate-translation-element-mark="1"><span class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner" data-immersive-translate-translation-element-mark="1">接收短信：$0 + 运营商费用（$0 至 $0.003）</span></span></span></li>
+<li data-immersive-translate-walked="019c3860-a5a2-4c9a-97fa-92fbbecd68cf" data-immersive-translate-paragraph="1">每月最低消费3000$</li>
+</ul>
+<h2 data-immersive-translate-walked="019c3860-a5a2-4c9a-97fa-92fbbecd68cf" data-immersive-translate-paragraph="1">Sinch</h2>
+<ul data-immersive-translate-walked="019c3860-a5a2-4c9a-97fa-92fbbecd68cf">
+<li data-immersive-translate-walked="019c3860-a5a2-4c9a-97fa-92fbbecd68cf" data-immersive-translate-paragraph="1">客制化价格</li>
+<li data-immersive-translate-walked="019c3860-a5a2-4c9a-97fa-92fbbecd68cf" data-immersive-translate-paragraph="1">有最低消费</li>
+</ul>
+<p>这些并不是全部，我只是罗列出了一些比较有代表性的MVNO虚拟运营商，希望这会对你有所启发。</p>
+</div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>如何在Wordpress中使用redis?</title>
+        <author>
+            <name>Ramburnia</name>
+        </author>
+        <link href="https://blog.atom.ip-ddns.com/how-to-use-wp-in-redis/"/>
+        <id>https://blog.atom.ip-ddns.com/how-to-use-wp-in-redis/</id>
             <category term="Tech"/>
 
         <updated>2025-07-03T20:56:56+08:00</updated>
