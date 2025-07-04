@@ -93,7 +93,7 @@
 <p>添加网站（设置自己拥有的域名例如 blog.example.com ，添加ssl证书，上传/复制ssl证书，打开HTS和取消勾选除了tls1.3之外的选项。</p>
 <p>进入网站文件夹，找到/sites/index，删除/index文件夹下的所有内容，然后远程从Wordpress官网下载 Wordpress到vps并解压缩，将解压出来的Wordpress文件全部移动到/index文件夹下，然后返回上级目录，点击编辑权限，编辑权限“用户组”和“公共”并设置为<span style="color: #e03e2d;">“1000”</span>。此步骤完成。</p>
 <p>然后是正常安装Wordpress，详情不再赘述。下面是如何使用Redis Object Cache Pro的重点，在/index（安装Wordpress的文件夹里）/wp_config，进入，在最后那里插入以下代码：</p>
-<pre class="language-php"><code>define('WP_REDIS_CONFIG', [
+<pre class="language-php line-numbers"><code>define('WP_REDIS_CONFIG', [
 'token' =&gt; 'XXXXXXXXXXXXXXXXXXXXXXXXX', // 插件的许可证
 'host' =&gt; '1Panel-keydb-7FpI', //1panel中redis的容器名，按照你自己的填写，千万不要照抄
 'password' =&gt; 'XXXXXXXXX', //按照你自己的填写，千万不要照抄，如果没有密码则本行全行删除
